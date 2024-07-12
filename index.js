@@ -9,6 +9,7 @@ app.get('/',(req,res)=>{
 app.get('/login',(req,res)=>{
     res.render("login.ejs")
 })
+
 app.get('/sitemap', (req, res) => {
     res.header('Content-Type', 'application/xml');
     res.sendFile(__dirname + '/sitemap.xml');
